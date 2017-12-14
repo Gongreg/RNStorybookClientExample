@@ -5,6 +5,16 @@ import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 
 export default class Welcome extends React.Component {
+  static displayName = 'Welcome';
+
+  static defaultProps = {
+    showApp: null,
+  };
+
+  static propTypes = {
+    showApp: PropTypes.func,
+  };
+
   styles = {
     wrapper: {
       flex: 1,
@@ -45,11 +55,3 @@ export default class Welcome extends React.Component {
     );
   }
 }
-
-Welcome.defaultProps = {
-  showApp: null,
-};
-
-Welcome.propTypes = {
-  showApp: PropTypes.func,
-};

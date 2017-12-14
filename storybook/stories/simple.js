@@ -10,6 +10,8 @@ import {View, Text} from 'react-native';
  * 2
 */
 export default class Simple extends PureComponent {
+  static displayName = 'Simple';
+
   static propTypes = {
     /**
      * Text displayed at top

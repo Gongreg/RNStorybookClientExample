@@ -34,7 +34,7 @@ export default class App extends Component {
       () => require('./storybook/stories'),
       module,
       {
-        port: (port === 'false' || port  === '') ? false : port,
+        port: (port === 'false' || port === '') ? false : port,
         host,
         query: `pairedId=${pairedId}`,
         secured: secured === 'true',
@@ -60,14 +60,16 @@ export default class App extends Component {
     if (!this.state.displayScanner) {
       return (
         <View style={styles.storybookContainer}>
-          <TouchableOpacity
-            style={styles.cancelButton}
-            onPress={this.reset}>
-            <Text style={styles.cancelButtonText}>
-              Reset
-            </Text>
-          </TouchableOpacity>
           {this.storybookComponent}
+          <View style={styles.bottomBar}>
+            <TouchableOpacity
+              style={styles.cancelButton}
+              onPress={this.reset}>
+              <Text style={styles.cancelButtonText}>
+                Reset
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       );
     }
@@ -86,8 +88,8 @@ export default class App extends Component {
                 height: Dimensions.get('window').height,
                 width: Dimensions.get('window').width,
               }}
-            />}
-
+            />
+        }
         <View style={styles.bottomBar}>
           <Text numberOfLines={2} style={styles.urlText}>
             https://vast-eyrie-45947.herokuapp.com/
