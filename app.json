@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-storybook-hosted-client-example",
-    "description": "This project is really great.",
+    "name": "React Native Storybook Hosted Client Example",
+    "description": "Example app which supports scanning qr code displayed in storybook. Open DOMAIN to try it out.",
     "slug": "rn-storybook-hosted-client-example",
     "privacy": "public",
     "sdkVersion": "24.0.0",
