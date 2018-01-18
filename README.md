@@ -1,6 +1,6 @@
-#React Native Storybook Host Client Example
+# React Native Storybook Host Client Example
 
-##Expo Link: https://expo.io/@gongreg/rn-storybook-hosted-client-example
+## Expo Link: https://expo.io/@gongreg/rn-storybook-hosted-client-example
 
 This is an example app created with expo. It allows to scan qr code displayed in storybook manager to connect server
 with the client.
